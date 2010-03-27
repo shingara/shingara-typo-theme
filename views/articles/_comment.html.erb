@@ -6,9 +6,9 @@
   </h4>
   <br class='clear' />
   <div class='thecomment'>
-    <%= comment.html %>
+    <%= simple_format comment.html %>
     <% unless comment.published -%>
     <div class="spamwarning"><%= _("This comment has been flagged for moderator approval.") %></div>
-    <% end -%>    
+    <% end -%>
   </div>
 </li>
